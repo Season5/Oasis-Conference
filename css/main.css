@@ -1,6 +1,5 @@
 body{
-    margin-left: -35%;
-    margin-right: -35%;
+    font-family: 'Abril Fatface','Raleway','Fontin' sans-serif;
     /*background: #008B00;*/
 }
 row{
@@ -9,8 +8,16 @@ row{
     background-color: #008B00;    
 }
 .columns{
-    background-size: cover;
+    margin-top: -10px;
+    background-size: contain;
     width: 100%; 
     height: 550px;
-    border-radius: 25px;
+}
+.color2{
+    background: #1c78c7; 
+    margin-top: -10px;
+}
+.color1{
+    background: #8b420c;
+    margin-top: -10px;
 }
