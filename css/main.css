@@ -1,5 +1,16 @@
 body{
-    margin-left: 5%;
-    margin-right: 5%;
-    background: #008B00;
+    margin-left: -35%;
+    margin-right: -35%;
+    /*background: #008B00;*/
+}
+row{
+    
+    height: 1000px;
+    background-color: #008B00;    
+}
+.columns{
+    background-size: cover;
+    width: 100%; 
+    height: 550px;
+    border-radius: 25px;
 }
