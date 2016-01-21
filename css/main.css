@@ -9,7 +9,7 @@ body{
     z-index: 3;
     position: relative;
     text-align: center;
-    color: aliceblue;
+    color: white;
     font-size: 140px;
     font-weight:bolder;
     line-height: 85px;
@@ -264,17 +264,41 @@ transition: all 0.7s ease;
     font-size: 28px;
     font-weight:100;
     z-index: 30;
-    color: antiquewhite;
     position: fixed;
     margin-top: -335px;
 }
 .button1{
     width:10%;
     height: 45px;
-    color: antiquewhite;
     border-radius: 50px;
     border: 2px solid aliceblue;
     margin-left: 12%;
+    text-align: center;
+    font-size: 28px;
+    font-weight:100;
+    z-index: 30;
+    position: fixed;
+    margin-top: -335px;
+}
+.button3{
+    width:13%;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid aliceblue;
+    margin-left: 84.5%;
+    text-align: center;
+    font-size: 28px;
+    font-weight:100;
+    z-index: 30;
+    position: fixed;
+    margin-top: -335px;
+}
+.button2{
+    width:10%;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid aliceblue;
+    margin-left: 72.5%;
     text-align: center;
     font-size: 28px;
     font-weight:100;
