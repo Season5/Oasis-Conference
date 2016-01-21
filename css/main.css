@@ -22,7 +22,7 @@ body{
     height: 635px;
     top: 0px;
     left: 0px;
-    margin-left: -10px;
+    margin-left: -2.5px;
 }
 .cb-slideshow:after {
     content: '';
@@ -253,4 +253,32 @@ padding-top: 50px;
 .textbox {
 -webkit-transition: all 0.7s ease;
 transition: all 0.7s ease;
+}
+.button0{
+    width:10%;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid aliceblue;
+    margin-left: 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight:100;
+    z-index: 30;
+    color: antiquewhite;
+    position: fixed;
+    margin-top: -335px;
+}
+.button1{
+    width:10%;
+    height: 45px;
+    color: antiquewhite;
+    border-radius: 50px;
+    border: 2px solid aliceblue;
+    margin-left: 12%;
+    text-align: center;
+    font-size: 28px;
+    font-weight:100;
+    z-index: 30;
+    position: fixed;
+    margin-top: -335px;
 }
