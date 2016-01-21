@@ -3,7 +3,7 @@ body{
     /*background: #008B00;*/
 }
 .row1{
-    height: 1635px;
+    height: 635px;
 }
 .home h1{
     z-index: 3;
@@ -305,4 +305,40 @@ transition: all 0.7s ease;
     z-index: 30;
     position: fixed;
     margin-top: -335px;
+}
+.button0:hover{
+        background:#fff;
+}
+.button1:hover{
+        background:#fff;
+}
+.button2:hover{
+        background:#fff;
+}
+.button3:hover{
+        background:#fff;
+}
+button0:visited{
+        color:gray;
+}
+.button1:visited{
+       color:gray;
+}
+.button2:visited{
+        color:gray;
+}
+.button3:visited{
+        color:gray;
+}
+.button0:active{
+        background:orange;
+}
+.button1:active{
+        background:orange;
+}
+.button2:active{
+        background:orange;
+}
+.button3:active{
+        background:orange;
 }
