@@ -1,6 +1,6 @@
 body{
     font-family: 'Raleway','Fontin' 'Fertigo';
-    /*background: #008B00;*/
+    
 }
 .row1{
     height: 635px;
@@ -14,6 +14,9 @@ body{
     font-weight:bolder;
     line-height: 85px;
     margin-top: -580px;
+}
+.sample{
+    background: aliceblue;
 }
 .cb-slideshow,
 .cb-slideshow:after { 
