@@ -18,6 +18,9 @@ body{
 .sample{
     background: aliceblue;
 }
+.fields{
+    margin-left: 10%;
+}
 .cb-slideshow,
 .cb-slideshow:after { 
     position: relative;
