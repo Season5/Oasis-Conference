@@ -1,0 +1,360 @@
+body{
+    font-family: 'Raleway','Fontin' 'Fertigo';
+    
+}
+.row1{
+    height: 635px;
+}
+.home h1{
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 140px;
+    font-weight:bolder;
+    line-height: 85px;
+    margin-top: -580px;
+}
+.sample{
+    background: aliceblue;
+}
+.fields{
+    margin-left: 10%;
+}
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: relative;
+    width: 100%;
+    height: 635px;
+    top: 0px;
+    left: 0px;
+    margin-left: -2.5px;
+}
+.cb-slideshow:after {
+    content: '';
+}
+.cb-slideshow li {
+    list-style-type: none;
+}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 1;
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 36s linear infinite 0s;
+    -moz-animation: imageAnimation 36s linear infinite 0s;
+    -o-animation: imageAnimation 36s linear infinite 0s;
+    -ms-animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 36s linear infinite 0s; 
+}
+.cb-slideshow li div { 
+    z-index: 3;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    -webkit-animation: titleAnimation 40Ss linear infinite 0s;
+    -moz-animation: titleAnimation 40s linear infinite 0s;
+    -o-animation: titleAnimation 40s linear infinite 0s;
+    -ms-animation: titleAnimation 40s linear infinite 0s;
+    animation: titleAnimation 40s linear infinite 0s; 
+}
+.cb-slideshow li div h3 { 
+    font-family: 'Raleway','Fontin', 'Fertigo', sans-serif;
+    font-size: 90px;
+    font-weight:bolder;
+    line-height:200px;
+    position: relative;
+}
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url("nairobi1.jpg");
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url("gigiri.jpg");
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    animation-delay: 8s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url("environment1.jpg");
+    -webkit-animation-delay: 16s;
+    -moz-animation-delay: 16s;
+    -o-animation-delay: 16s;
+    -ms-animation-delay: 16s;
+    animation-delay: 16s; 
+}
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url("environment3.jpg");
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url("environment2.jpg");
+    -webkit-animation-delay: 32s;
+    -moz-animation-delay: 32s;
+    -o-animation-delay: 32s;
+    -ms-animation-delay: 32s;
+    animation-delay: 32s; 
+}
+.cb-slideshow li:nth-child(2) div { 
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    animation-delay: 8s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    -webkit-animation-delay: 16s;
+    -moz-animation-delay: 16s;
+    -o-animation-delay: 16s;
+    -ms-animation-delay: 16s;
+    animation-delay: 16s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(5) div { 
+    -webkit-animation-delay: 32s;
+    -moz-animation-delay: 32s;
+    -o-animation-delay: 32s;
+    -ms-animation-delay: 32s;
+    animation-delay: 32s; 
+}
+/* Animation for the slideshow images */
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 1;
+    -webkit-animation-timing-function: ease-in; }
+    10% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    10% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    10% { opacity: 1;
+         -o-animation-timing-function: ease-out; }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    10% { opacity: 1;
+         -ms-animation-timing-function: ease-out; }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    10% { opacity: 1;
+         animation-timing-function: ease-out; }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/* Animation for the title */
+@-webkit-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    10% { opacity: 1 }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    10% { opacity: 1 }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    10% { opacity: 1 }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    10% { opacity: 1 }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    10% { opacity: 1 }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+
+@media screen and (max-width: 1140px) { 
+    .cb-slideshow li div h3 { font-size: 140px }
+}
+@media screen and (max-width: 600px) { 
+    .cb-slideshow li div h3 { font-size: 80px }
+}
+.container {
+position:relative;
+}
+.container .textbox {
+width:200px;
+height:150px;
+position:absolute;
+top:0;
+left:0;
+-webkit-transform: scale(0);
+transform: scale(0);
+border-radius:5px;
+background-color: rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+}
+.container:hover .textbox {
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+.text {
+padding-top: 50px;
+}
+.textbox {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+.button0{
+    width:10%;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid aliceblue;
+    margin-left: 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight:100;
+    z-index: 30;
+    position: fixed;
+    margin-top: -335px;
+}
+.button1{
+    width:10%;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid aliceblue;
+    margin-left: 12%;
+    text-align: center;
+    font-size: 28px;
+    font-weight:100;
+    z-index: 30;
+    position: fixed;
+    margin-top: -335px;
+}
+.button3{
+    width:13%;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid aliceblue;
+    margin-left: 84.5%;
+    text-align: center;
+    font-size: 28px;
+    font-weight:100;
+    z-index: 30;
+    position: fixed;
+    margin-top: -335px;
+}
+.button2{
+    width:10%;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid aliceblue;
+    margin-left: 72.5%;
+    text-align: center;
+    font-size: 28px;
+    font-weight:100;
+    z-index: 30;
+    position: fixed;
+    margin-top: -335px;
+}
+.button0:hover{
+        background:#fff;
+}
+.button1:hover{
+        background:#fff;
+}
+.button2:hover{
+        background:#fff;
+}
+.button3:hover{
+        background:#fff;
+}
+button0:visited{
+        color:gray;
+}
+.button1:visited{
+       color:gray;
+}
+.button2:visited{
+        color:gray;
+}
+.button3:visited{
+        color:gray;
+}
+.button0:active{
+        background:orange;
+}
+.button1:active{
+        background:orange;
+}
+.button2:active{
+        background:orange;
+}
+.button3:active{
+        background:orange;
+}
+button {
+  color: #900;
+  font-weight: bold;
+  font-size: 150%;
+  text-transform: uppercase;
+    float: right;
+}
+a{
+    color: #050403;
+}
