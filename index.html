@@ -5,6 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oasis | Conference</title>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel ="stylesheet" href="css/main.css"/>
@@ -333,8 +334,8 @@
        </div>
        
         <div class="number fields">
-           <label for="number">Phone</label>
-           <input id="number" width="90%"  type="text" required="" name="Number"></input>
+           <label for="number">Phone(format: +xxxx-xxxx-xxxx)</label>
+           <input id="number" width="90%" pattern="^([0|\+[0-9]{1,5})?([1-9][0-9]{9})$" type="text" required="" name="Number"></input>
            <small class="error"></small>
         </div>
 </br></br></br>

@@ -29,6 +29,7 @@ body{
     top: 0px;
     left: 0px;
     margin-left: -2.5px;
+    z-index: 1;
 }
 .cb-slideshow:after {
     content: '';
