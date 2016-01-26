@@ -50,36 +50,36 @@
                 <form data-abide>
           <div class="name-field fields">
           <label>First Name</label>
-          <input type="text" width="90%" required></input>
+          <input type="text" id="fname" width="90%" required></input>
           <small class="error" data-error-message=""></small>
           </div>
           <div class="name-field fields">
           <label>Last Name</label>
-          <input type="text" width="90%" required></input>
+          <input type="text" id ="lname" width="90%" required></input>
           <small class="error" data-error-message=""></small>
           </div>
           <div class="name-field fields">
           <label>Choose Gender</label>
               </br>
-              <input type="radio" name="gender" checked> Male</input>
+              <input type="radio" id="gender" name="gender" checked> Male</input>
                  </br>
           <input type="radio" name="gender"> Female</input>
           </div>
           
           <div class="email-field fields">
           <label>Email</label>
-        <input id="email" width="90%" type="email" required></input>
+        <input id="email" width="90%" id= "email" type="email" required></input>
        <small class="error"></small>
        </div>
        <div class="town-field fields">
           <label>Town/City</label>
-        <input type="text" width="90%"  required></input>
+        <input type="text" width="90%" id="town" required></input>
        <small class="error"></small>
        </div>
        
-       <div class="town-field fields">
+       <div class="country-field fields">
           <label>Country</label>
-            <select width="90%" >
+            <select width="90%" id="country">
 	<option value="Afghanistan" title="Afghanistan">Afghanistan</option>
 	<option value="Åland Islands" title="Åland Islands">Åland Islands</option>
 	<option value="Albania" title="Albania">Albania</option>
@@ -339,7 +339,7 @@
            <small class="error"></small>
         </div>
 </br></br></br>
-        <button width="30%" boarder-radius="25px" class="button" type="submit">Submit</button>
+        <button width="30%" boarder-radius="25px" id="submit" class="button" type="submit">Submit</button>
       </form> 
              </div>
           <div class="columns small-4">
@@ -351,6 +351,22 @@
           </div>
           </article>
       </div>
+      <script>
+           var myOasisRef = new Firebase('https://docs-examples.firebaseio.com/web/data');
+      $('#submit').keypress(function (e) {
+        if (e.keyCode == 13) {
+            var fname = $('#fname').val();
+            var lname = $('#lname').val();
+            var gender = $('#gender').val();
+            var email = $('#email').val();
+            var town = $('#town').val();
+            var country = $('#country').val();
+            var number = $('#number').val();
+          myOasisRef.push({fname: fname,lname: lname, gender: gender, email: email, town: town, country: country,  number: number});
+          $('#submit').val('');
+        }
+      });
+      </script>
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
