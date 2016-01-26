@@ -48,13 +48,20 @@
          <h1 style="text-align:center;" class="register">Planners</h1>
              <h3 style="margin-left:30%;">Registered Delegates</h3>
              <div class="columns small-12">
-                 
+                 <div text-align="center" id='messagesDiv'></div>
              </div>
           </article>
       </div>
       <script>
            var myOasisRef = new Firebase('https://radiant-inferno-6357.firebaseio.com/');
-      
+          myOasisRef.on('child_added', function(snapshot) {
+        var message = snapshot.val();
+        displayChatMessage(message.fname, message.lname);
+      });
+      function displayChatMessage(fname, lname) {
+        $('<div/>').text(lname).prepend($('<em/>').text(fname+': ')).appendTo($('#messagesDiv'));
+        $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
+      };
       </script>
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
