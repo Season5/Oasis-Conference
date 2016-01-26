@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oasis | Conference</title>
     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel ="stylesheet" href="css/main.css"/>
@@ -339,7 +340,7 @@
            <small class="error"></small>
         </div>
 </br></br></br>
-        <button width="30%" boarder-radius="25px" id="submit" class="button" type="submit">Submit</button>
+        <button width="30%" boarder-radius="25px" id="submit" class="button" onclick="function()" type="submit">Submit</button>
       </form> 
              </div>
           <div class="columns small-4">
@@ -352,18 +353,18 @@
           </article>
       </div>
       <script>
-           var myOasisRef = new Firebase('https://docs-examples.firebaseio.com/web/data');
-      $('#submit').keypress(function (e) {
+           var myOasisRef = new Firebase('https://radiant-inferno-6357.firebaseio.com/');
+      $('#number').keypress(function (e) {
         if (e.keyCode == 13) {
             var fname = $('#fname').val();
             var lname = $('#lname').val();
-            var gender = $('#gender').val();
+            var opt.gender = $('#gender').val();
             var email = $('#email').val();
             var town = $('#town').val();
             var country = $('#country').val();
             var number = $('#number').val();
-          myOasisRef.push({fname: fname,lname: lname, gender: gender, email: email, town: town, country: country,  number: number});
-          $('#submit').val('');
+          myOasisRef.push({fname: fname,lname: lname, email: email, gender: gender, town: town, country: country,  number: number});
+          $('#number').val('');
         }
       });
       </script>
