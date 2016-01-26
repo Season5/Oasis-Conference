@@ -48,7 +48,7 @@
          <h1 style="text-align:center;" class="register">Planners</h1>
              <h3 style="margin-left:30%;">Registered Delegates</h3>
              <div class="columns small-12">
-                 <div id='messagesDiv' style="margin-left:30%;"></div>
+                 <div id='messagesDiv' style="margin-left:30%; margin-right:30%;"></div>
              </div>
           </article>
       </div>
@@ -59,6 +59,7 @@
         displayChatMessage(message.fname, message.lname, message.town, message.country, message.email, message.number);
       });
       function displayChatMessage(fname, lname, town, country, email, number) {
+          $('#messagesDiv').append('<hr />');
         $('<div/>').text(lname).prepend($('<em/>').text(fname+': ')).appendTo($('#messagesDiv'));
           $('<div/>').text(town).prepend($('<em/>').text(country+' - ')).appendTo($('#messagesDiv'));
           $('<div/>').text(email).prepend($('<em/>').text(number+' or ')).appendTo($('#messagesDiv'));
