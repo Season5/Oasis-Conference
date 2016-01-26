@@ -56,10 +56,12 @@
            var myOasisRef = new Firebase('https://radiant-inferno-6357.firebaseio.com/');
           myOasisRef.on('child_added', function(snapshot) {
         var message = snapshot.val();
-        displayChatMessage(message.fname, message.lname);
+        displayChatMessage(message.fname, message.lname, message.town, message.country, message.email, message.number);
       });
-      function displayChatMessage(fname, lname) {
+      function displayChatMessage(fname, lname, town, country, email, number) {
         $('<div/>').text(lname).prepend($('<em/>').text(fname+': ')).appendTo($('#messagesDiv'));
+          $('<div/>').text(town).prepend($('<em/>').text(country+' - ')).appendTo($('#messagesDiv'));
+          $('<div/>').text(email).prepend($('<em/>').text(number+' or ')).appendTo($('#messagesDiv'));
         $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
       };
       </script>
