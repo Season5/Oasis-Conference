@@ -17,6 +17,7 @@ body{
 }
 .sample{
     background: aliceblue;
+    margin-top: 20px;
 }
 .fields{
     margin-left: 10%;
@@ -25,7 +26,7 @@ body{
 .cb-slideshow:after { 
     position: relative;
     width: 100%;
-    height: 635px;
+    height: 658px;
     top: 0px;
     left: 0px;
     margin-left: -2.5px;
